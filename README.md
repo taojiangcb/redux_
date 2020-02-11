@@ -9,8 +9,12 @@
 
 
 
-
-
+# 单元测试
+```
+git clone https://github.com/taojiangcb/redux_.git
+yarn install
+npm run test
+```
 
 
 
