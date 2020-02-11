@@ -1,0 +1,50 @@
+{
+  "name": "redux_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "build":"tsc -p tsconfig.json"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": true
+  },
+  "author": "taojiang",
+  "license": "ISC",
+  "dependencies": {
+    "mocha-typescript": "^1.1.17"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.8",
+    "@types/chai-http": "^4.2.0",
+    "@types/mocha": "^7.0.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
